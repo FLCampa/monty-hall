@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.form > div {
+  display: flex;
+}
+
+@media(max-width: 612px) {
+  .form > div {
+    flex-direction: column;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  flex: 1;
+  margin: 0;
+}

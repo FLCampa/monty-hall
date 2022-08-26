@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+
+  width: var(--door-width);
+  height: var(--door-height);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 10px 5px;
+}
+
+.frame {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 1; /* ocupa todo o espaço disponivel */
+  align-items: center;
+
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
+  border-left: 5px solid brown;
+  background: #0005;
+}
+
+.door {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+
+  padding: 15px;
+  background: chocolate;
+}
+
+.number {
+  font-size: 3rem;
+}
+
+.knob {
+  position: absolute;
+  top: calc(0.45 * var(--door-height)); /* 45% da altura da porta */
+  left: calc(0.15 * var(--door-width));;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+
+  background: brown;
+}
+
+.floor {
+  height: 10px;
+  width: 100%;
+
+  background: #ddd;
+}
+
+.selected {
+  border-top: 5px solid yellow;
+  border-right: 5px solid yellow;
+  border-left: 5px solid yellow;
+}
+
+.selected .number {
+  color: yellow;
+}
+
+.selected .knob {
+  background: yellow;
+}

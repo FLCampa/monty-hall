@@ -1,9 +1,15 @@
 html,
 body {
+  max-width: 100vw;
+  max-height: 100vh;
+  
+  width: 100%;
+  height: 100%;
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;  
 }
 
 a {
@@ -20,7 +26,12 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #fff;
+    background: #363636;
   }
+}
+
+:root {
+  --door-width: 200px;
+  --door-height: 310px;
 }
